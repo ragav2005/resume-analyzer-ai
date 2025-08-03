@@ -40,7 +40,7 @@ export default function Home() {
       <Navbar />
 
       <section className="main-section">
-        <div className="page-heading pb-16">
+        <div className="page-heading pb-16 max-sm:pb-0">
           <h1>Track Your Resume & Applications Ratings</h1>
           {!loadingResumes && resumes.length === 0 ? (
             <h2 className="mt-5">
@@ -49,16 +49,18 @@ export default function Home() {
               form Ai.
             </h2>
           ) : (
-            <h2>Review your submissions and check AI-powered feedback.</h2>
+            <h2 className="">
+              Review your submissions and check AI-powered feedback.
+            </h2>
           )}
         </div>
 
         {loadingResumes && (
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center max-sm:mt-0">
             <img
               src="/images/resume-scan-2.gif"
               alt="loading"
-              className="w-[200px]"
+              className="w-[200px] h-[200px]"
             />
             <p>Loading Resumes...</p>
           </div>
