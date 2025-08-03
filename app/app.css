@@ -3,8 +3,9 @@
 @import "tw-animate-css";
 
 @theme {
-  --font-sans: "Mona Sans", ui-sans-serif, system-ui, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Mona Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-dark-200: #475467;
   --color-light-blue-100: #c1d3f81a;
   --color-light-blue-200: #a7bff14d;
@@ -85,7 +86,7 @@ form {
   }
 
   .resume-card {
-    @apply flex flex-col gap-8 h-[560px] w-[350px] lg:w-[430px] xl:w-[430px]  bg-white rounded-2xl p-6 mb-8 ;
+    @apply flex flex-col gap-8 h-[430px] w-[350px] lg:w-[430px] lg:h-[560px] xl:w-[430px]  bg-white rounded-2xl p-6 mb-8;
   }
 
   .resume-card-header {
@@ -93,7 +94,7 @@ form {
   }
 
   .feedback-section {
-    @apply flex flex-col gap-8 w-1/2 px-8 max-lg:w-full py-6;
+    @apply flex flex-col gap-8 w-1/2 px-8 max-lg:w-full py-6 max-sm:px-3;
   }
 
   .navbar {
