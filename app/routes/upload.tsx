@@ -105,7 +105,7 @@ const Upload = () => {
       <Navbar />
 
       <section className="main-section">
-        <div className="page-heading py-16">
+        <div className="page-heading py-16 max-sm:py-0">
           <h1>Smart feedback for your dream job</h1>
           {isProcessing ? (
             <>
@@ -158,7 +158,7 @@ const Upload = () => {
               </div>
 
               <button
-                className="primary-button w-fit px-10 mx-auto"
+                className="primary-button w-fit px-10 mx-auto max-sm:mb-10"
                 type="submit"
               >
                 Analyze Resume

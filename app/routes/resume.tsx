@@ -57,18 +57,14 @@ const resume = () => {
     <main className="!pt-0">
       <nav className="resume-nav">
         <Link to="/" className="back-button">
-          <img
-            src="/public/icons/back.svg"
-            alt="back"
-            className="w-2.5 h-2.5"
-          />
+          <img src="/icons/back.svg" alt="back" className="w-2.5 h-2.5" />
           <span className="text-gray-800 font-semibold text-sm">
             Back to Home
           </span>
         </Link>
       </nav>
       <div className="flex flex-col-reverse w-full lg:flex-row lg:h-[calc(100vh-70.4px)]">
-        <section className="feedback-section bg-[url('/public/images/bg-small.svg')] bg-cover items-center justify-center flex p-4 lg:w-1/2">
+        <section className="feedback-section bg-[url('/images/bg-small.svg')] bg-cover items-center justify-center flex p-4 lg:w-1/2">
           {imageUrl && resumeUrl && (
             <div className="animate-in fade-in duration-1000 gradient-border w-fit h-full">
               <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
@@ -95,7 +91,7 @@ const resume = () => {
               <Details feedback={feedback} />
             </div>
           ) : (
-            <img src="/public/images/resume-scan-2.gif" className="w-full" />
+            <img src="/images/resume-scan-2.gif" className="w-full" />
           )}
         </section>
       </div>

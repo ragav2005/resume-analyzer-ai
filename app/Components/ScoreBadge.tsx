@@ -15,7 +15,9 @@ const ScoreBadge = ({ score }: { score: number }) => {
     badgeText = "Needs Work";
   }
   return (
-    <div className={`px-3 py-1 rounded-full ${badgeColor}`}>
+    <div
+      className={`px-3 py-2 max-sm:py-1 max-sm:px-2 rounded-full ${badgeColor}`}
+    >
       <p className="text-sm font-medium">{badgeText}</p>
     </div>
   );

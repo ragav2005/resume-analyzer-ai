@@ -56,7 +56,7 @@ export default function Home() {
         {loadingResumes && (
           <div className="flex flex-col items-center justify-center">
             <img
-              src="/public/images/resume-scan-2.gif"
+              src="/images/resume-scan-2.gif"
               alt="loading"
               className="w-[200px]"
             />

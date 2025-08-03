@@ -37,7 +37,7 @@ const Category = ({ title, score }: { title: string; score: number }) => {
     <div className="resume-summary">
       <div className="category">
         <div className="flex flex-row items-center justify-center gap-2">
-          <p className="text-2xl">{title}</p>
+          <p className="text-2xl max-sm:text-lg">{title}</p>
           <ScoreBadge score={score} />
         </div>
         <p className="text-2xl">
